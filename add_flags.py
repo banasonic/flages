@@ -26,5 +26,5 @@ def add_flags_to_file(input_file, output_file):
         f.writelines(updated_lines)
 
 if __name__ == "__main__":
-    add_flags_to_file("Twin-English-Nemrawy-3-2026.txt", "Twin-English-Nemrawy-3-2026-flags.txt")
+    add_flags_to_file("Twin.chl", "Twin-flags.chl")
     print("✅ تم إنشاء الملف الجديد مع الأعلام")
