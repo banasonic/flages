@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4   # أحدث نسخة
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
@@ -19,7 +19,7 @@ jobs:
         run: python add_flags.py
 
       - name: Upload result
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4   # الإصدار الجديد
         with:
           name: flagged-channels
           path: Twin-English-Nemrawy-3-2026-flags.txt
