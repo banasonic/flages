@@ -22,4 +22,4 @@ jobs:
         uses: actions/upload-artifact@v4   # الإصدار الجديد
         with:
           name: flagged-channels
-          path: Twin-English-Nemrawy-3-2026-flags.txt
+          path: Twin-flags.txt
