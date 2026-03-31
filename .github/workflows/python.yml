@@ -1,9 +1,7 @@
 name: Run Python Script
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:   # يسمح بتشغيل الـ Workflow يدويًا من صفحة Actions
 
 jobs:
   build:
@@ -19,3 +17,9 @@ jobs:
 
       - name: Run script
         run: python add_flags.py
+
+      - name: Upload result
+        uses: actions/upload-artifact@v2
+        with:
+          name: flagged-channels
+          path: Twin-English-Nemrawy-3-2026-flags.txt
